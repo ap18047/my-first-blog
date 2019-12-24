@@ -18,6 +18,8 @@ def China(request):
     return render(request, 'blog/China.html')
 def Japan(request):
     return render(request, 'blog/Japan.html')
+def game(request):
+    return render(request, 'blog/game.html')
 
 
 def post_new(request):

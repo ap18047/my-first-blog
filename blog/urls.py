@@ -10,6 +10,7 @@ urlpatterns = [
     re_path(r'^post/(?P<pk>[0-9]+)/edit/$', views.post_edit, name='post_edit'),
     re_path(r'^China', views.China, name='China'),
     re_path(r'^Japan', views.Japan, name='Japan'),
+    re_path(r'^game', views.game, name='game'),
 
 
 
