@@ -57,7 +57,12 @@ h1, h2, h3, h4 {
 footer span.name{
         font-weight:bold;
 }
-
+#gamelink{
+    display: block;
+    float: right;
+    font-size: 24px;
+    background-color: blue;
+}
 footer{
         clear:both;
         margin-left: auto;
