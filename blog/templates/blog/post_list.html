@@ -2,12 +2,14 @@
 
 {% block content %}
     {% for post in posts %}
+        <hr>
         <div class="post">
             <div class="date">
-                {{ post.published_date }}
+                <p>最近更新時間:{{ post.published_date }}</p>
             </div>
             <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
+        <hr>
     {% endfor %}
 {% endblock %}

@@ -2,16 +2,21 @@
 
 {% block content %}
     <div class="post">
-        {% if post.published_date %}
-            <div class="date">
-                {{ post.published_date }}
-            </div>
-        {% endif %}
+
         {% if user.is_authenticated %}
         <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
         {% endif %}
+        <hr>
+        <a class="back" href="/">戻る</a>
         <h1>{{ post.title }}</h1>
         <p>{{ post.text|linebreaksbr }}</p>
+        <hr>
+        {% if post.published_date %}
+            <div class="date">
+                <p>最新更新時間：{{ post.published_date }}</p>
+                <p>作成時間：{{ post.created_date }}</p>
+            </div>
+        {% endif %}
 
     </div>
 {% endblock %}
