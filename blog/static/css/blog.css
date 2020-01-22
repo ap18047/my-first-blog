@@ -22,19 +22,19 @@ a{
     margin: auto;
     padding: 0;
     width: 960px;
+    top:0;
 }
 #top_local{
     display: block;
-    position: static;
+    color: white;
+    background-color: black;
+    font-size: 16px;
+    width: 40px;
     float: right;
-    border-radius: 12px;
-    background-color: #555555;
-    color: black;
 }
 .page-header {
     width: 960px;
     height: 130px;
-    padding-top: 30px;
     text-align: center;
     margin: auto;
     background-color:#1fc8db;

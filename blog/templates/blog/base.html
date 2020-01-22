@@ -10,10 +10,10 @@
     </head>
     <body>
       <div id="ALL">
-      <div id="top_local">
-        <a href="/admin">ログイン</a>
-      </div>
         <div class="page-header">
+          <div id="top_local">
+            <a href="/admin">ログイン</a>
+          </div><br>
             {% if user.is_authenticated %}
               <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
             {% endif %}
